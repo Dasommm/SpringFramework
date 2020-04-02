@@ -1,0 +1,8 @@
+1585039358402	Move 'root-context.xml' to 'appServlet'
+1585039372320	Rename resource 'root-context.xml'
+1585040490651	Delete element
+1585040999543	Rename package 'com.mvc.ex01.biz'
+1585041013253	Rename package 'com.mvc.ex01.dao'
+1585041025497	Rename package 'com.mvc.ex01.dto'
+1585051396093	Rename resource 'boardUpdate.jsp'
+1585052304136	Rename package 'com.mvc.ex01.common'

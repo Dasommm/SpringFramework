@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Spring07_HelloMVC"/>
+			<item value="Spring06_AOP"/>
+			<item value="Spring05_annotation"/>
+			<item value="Spring04"/>
+			<item value="Spring03"/>
+			<item value="Spring02"/>
+			<item value="Spring01_Hello"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Spring07_HelloMVC"/>
+			<item value="Spring06_AOP"/>
+			<item value="Spring05_annotation"/>
+			<item value="Spring04"/>
+			<item value="Spring03"/>
+			<item value="Spring02"/>
+			<item value="Spring01_Hello"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

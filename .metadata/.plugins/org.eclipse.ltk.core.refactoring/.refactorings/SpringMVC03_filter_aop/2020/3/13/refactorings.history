@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;순서.txt&apos; to &apos;SpringMVCEx01&apos;&#x0D;&#x0A;- Original project: &apos;SpringMVC03_filter_aop&apos;&#x0D;&#x0A;- Destination element: &apos;SpringMVCEx01&apos;&#x0D;&#x0A;- Original element: &apos;순서.txt&apos;" description="Copy file" element1="순서.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1585037485885" target="/SpringMVCEx01" units="0" version="1.0"/>
+</session>

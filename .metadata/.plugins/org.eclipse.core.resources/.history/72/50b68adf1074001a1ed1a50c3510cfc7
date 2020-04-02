@@ -1,0 +1,29 @@
+1. web.xml : 2.5 -> 4.0 만든다 (new dynamic web project -> web module 4.0생성 -> 복사)
+2. pom.xml에서 Java : 1.6 -> 1.8로 바꿔준다.
+	2-1. <org.springframework-version>5.2.5.RELEASE</org.springframework-version> 버전 바꾼다.
+	2-2. servlet api : 2.5 -> 4.0.1로 바꾸는데 (servlet-api -> javax.servlet-api)로 이름(artifact-id) 변경
+	2-3. jsp-api : 2.1 -> 2.3.3 (jsp-api -> javax.servlet.jsp-api)로 이름(artifact-id) 변경
+	2-4. maven-compiler-plugin : source/target 1.6 -> 1.8로 변경
+3. project facets
+	dynamic web module : 2.5 -> 4.0
+	java : 1.6 -> 1.8
+	
+4.maven update
+
+_jdbc
+5. pom.xml : spring-jdbc, ojdbc6
+6. web.xml : applicationContext.xml로 바꿔서 저장하고, *.do로 바꾸고, encoding filter 추가 
+7. src/main/resources/sqls 만들어서 jdbc.sql 파일과 db.properties 파일을 만든다.
+8. applicationContext.xml에 설정하기(dataSource)
+9. dto.dao.biz.controller만든다
+
+_javaconfig
+configuration을 xml이 아닌 java 클래스로 할거다.
+10. com/mvc/update/config/ApplicationConfig 클래스 만들기
+11. com/mvc/update/config/ServletConfig만든다 (impl WebMvcDonfigurer 상속받기)
+12. web.xml에서 경로 변경
+13. /WEB-INF/spring 폴더 삭제
+
+
+
+

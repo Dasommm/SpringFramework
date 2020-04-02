@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 홍길동, 250만원, 개발팀 : 생성자만 사용해서 -->
+	<!-- c:  constructor-->
+	<bean id="hong" class="com.test05.Emp" c:name="홍길동" c:salary="2500000" />
+	<bean id="honggd" class="com.test05.Developer" c:emp-ref="hong" c:dept="개발팀"></bean>
+	
+	<!-- 
+	<bean id="hong" class="com.test05.Emp">
+		<constructor-arg value="홍길동" />
+		<constructor-arg value="2500000" />
+	</bean>
+	<bean id="honggd" class="com.test05.Developer">
+		<constructor-arg ref="hong" />
+		<constructor-arg name="dept" value="개발팀"/>
+	</bean>
+	 -->
+	
+	<!-- 이순신, 200만원, 기술팀 : setter만 사용해서 -->
+	<!-- p: property-->
+	<bean id="lee" class="com.test05.Emp" p:name="이순신" p:salary="2000000" />
+	<bean id="leess" class="com.test05.Engineer" p:emp-ref="lee" p:dept="기술팀" />
+	
+	<!-- 
+	<bean id="lee" class="com.test05.Emp">
+		<property name="name" value="이순신" />
+		<property name="salary" value="2000000" />
+	</bean>
+	<bean id="leess" class="com.test05.Engineer">
+		<property name="emp" ref="lee" />
+		<property name="dept" value="기술팀"></property>
+	</bean>
+	 -->
+
+</beans>

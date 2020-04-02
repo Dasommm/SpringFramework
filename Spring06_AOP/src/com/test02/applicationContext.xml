@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="woman" class="com.test02.Woman" />
+	<bean id="man" class="com.test02.Man" />
+	
+	<!-- CCC : 공통 관심사항 -->
+	<bean id="myAdvice" class="com.test02.MyAspect"></bean>
+
+	<!-- proxy 객체 생성 -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+
+	<!-- advisor(aspect) : advice + pointcut -->
+	<bean id="myAdvisor" class="org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor">
+		<property name="advice" ref="myAdvice" />
+		<property name="expression" value="execution(public * *(..))" />
+													<!-- 접근제한자는 public 리턴타입 무엇이든 이름 무엇이든 (파라미터는 몇개든 가능하다)라는 의미  -->
+	</bean>
+
+
+</beans>

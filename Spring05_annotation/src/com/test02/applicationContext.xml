@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="hong" class="com.test02.Student"> <!-- setter로 값 설정 -->
+		<property name="name" value="Hoonie" />
+		<property name="addr" value="Gangnam" />
+		<property name="age" value="100" />
+	</bean>
+	
+	<bean id="lee" class="com.test02.Student"> <!-- 생성자로 값 설정 -->
+		<constructor-arg value="Sunny" />
+		<constructor-arg value="Gandong" />
+		<constructor-arg value="60" />
+	</bean>
+
+	<bean id="mySchool" class="com.test02.School">
+		<property name="grade" value="1" />
+	</bean>
+	
+	<context:annotation-config />
+	
+</beans>

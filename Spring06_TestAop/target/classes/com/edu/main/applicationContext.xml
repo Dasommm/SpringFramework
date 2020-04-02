@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<!-- width : 3 / height : 5 -->
+	
+	<!-- before/after를 붙이고 중간에 advice 넣는다..... -->
+	<aop:aspectj-autoproxy />
+	<bean id="rect" class="com.edu.entity.Rectangle" >
+		<property name="title" value="사각형" />
+		<property name="width" value="3" />
+		<property name="height" value="5" />
+	</bean>
+	
+	<bean id="tri" class="com.edu.entity.Triangle">
+		<property name="title" value="삼각형" />
+		<property name="width" value="3" />
+		<property name="height" value="5" />
+	</bean>
+	<bean id="myAspect" class="com.edu.aop.MyAspect" />
+	
+	<aop:config>
+		<aop:pointcut expression="execution(* viewSize())" id="viewPoint"/>
+		<aop:aspect ref="myAspect">
+			<aop:before method="before" pointcut-ref="viewPoint"/>
+			<aop:after method="after" pointcut-ref="viewPoint"/>
+		</aop:aspect>
+	</aop:config>
+
+
+
+	
+
+</beans>

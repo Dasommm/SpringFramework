@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="my" class="com.test02.address"></bean>
+	
+	<bean id="friend01" class="com.test02.address">
+		<constructor-arg index="0" value ="김정선"></constructor-arg>
+		<constructor-arg index="1" value="강서구"></constructor-arg>
+		<constructor-arg index="2" value="1234-1234"></constructor-arg>
+	</bean>
+	
+	<bean id="friend02" class = "com.test02.address">
+		<constructor-arg index="0" value ="홍길동"></constructor-arg>
+		<constructor-arg index="1" value="강남구"></constructor-arg>
+		<constructor-arg index="2" value="1333-4444"></constructor-arg>
+	</bean>
+</beans>

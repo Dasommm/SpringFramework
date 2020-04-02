@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="exboard">
+
+<resultMap type="exboardDto" id="exboardDto">
+	<result property="exno" column="exno"/>
+	<result property="exname" column="exname"/>
+	<result property="extitle" column="extitle"/>
+	<result property="excontent" column="excontent"/>
+	<result property="exdate" column="exdate"/>	
+</resultMap>
+
+<select id="selectAll" resultMap="exboardDto">
+SELECT * FROM EXBOARD
+ORDER BY EXNO DESC
+</select>
+
+<insert id="insert" parameterType="exboardDto">
+INSERT INTO EXBOARD
+VALUES(EXNOSEQ.NEXTVAL, #{exname}, #{extitle}, #{excontent}, SYSDATE)
+</insert>
+
+<select id="selectOne" parameterType="int" resultType="exboardDto">
+SELECT * FROM EXBOARD
+WHERE EXNO = #{exno}
+</select>
+
+<update id="update" parameterType="exboardDto">
+UPDATE EXBOARD
+SET EXTITLE =#{extitle}, EXCONTENT=#{excontent}
+WHERE EXNO = #{exno}
+</update>
+
+<delete id="delete" parameterType="int">
+DELETE FROM EXBOARD
+WHERE EXNO = #{exno}
+</delete>
+
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Spring01_Hello/src&lt;com.test02{MessageBean.java[MessageBean" modifiers="513" timestamp="1584341897693"/>
+<typeInfo handle="=Spring01_Hello/src&lt;com.test03{MessageBean.java[MessageBean" modifiers="513" timestamp="1584350422914"/>
+<typeInfo handle="=Spring02/src&lt;com.test01{MessageBean.java[MessageBean" modifiers="513" timestamp="1584530114127"/>
+<typeInfo handle="=Spring03/src&lt;com.test02{Emp.java[Emp" modifiers="1" timestamp="1584358656817"/>
+<typeInfo handle="=Spring03/src&lt;com.test06{TV.java[TV" modifiers="513" timestamp="1584435425674"/>
+<typeInfo handle="=Spring04/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-context\/5.2.4.RELEASE\/spring-context-5.2.4.RELEASE.jar&lt;org.springframework.context(MessageSourceAware.class[MessageSourceAware" modifiers="1537" timestamp="1584345771348"/>
+<typeInfo handle="=Spring04/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;javax.annotation.processing(Messager.class[Messager" modifiers="1537" timestamp="1576296281401"/>
+<typeInfo handle="=Spring06_AOP/src&lt;com.test03{Person.java[Person" modifiers="513" timestamp="1584607050454"/>
+<typeInfo handle="=Spring06_AOP/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;javax.management(PersistentMBean.class[PersistentMBean" modifiers="1537" timestamp="1576296281401"/>
+<typeInfo handle="=Spring06_AOP/src&lt;com.test04{Person.java[Person" modifiers="513" timestamp="1584612847144"/>
+<typeInfo handle="=Spring06_AOP/C:\/Users\/Sophie\/.m2\/repository\/org\/aspectj\/aspectjweaver\/1.9.5\/aspectjweaver-1.9.5.jar&lt;org.aspectj.lang.reflect(PerClause.class[PerClause" modifiers="1537" timestamp="1584604747783"/>
+<typeInfo handle="=Spring06_AOP/C:\/Users\/Sophie\/.m2\/repository\/org\/aspectj\/aspectjrt\/1.9.5\/aspectjrt-1.9.5.jar&lt;org.aspectj.lang.reflect(PerClause.class[PerClause" modifiers="1537" timestamp="1584604744421"/>
+<typeInfo handle="=Spring06_AOP/src&lt;com.test05{Person.java[Person" modifiers="513" timestamp="1584613235107"/>
+<typeInfo handle="=Spring06_AOP/src&lt;com.test02{Person.java[Person" modifiers="513" timestamp="1584604970296"/>
+<typeInfo handle="=Spring06_AOP/src&lt;com.test06{Person.java[Person" modifiers="513" timestamp="1584613922875"/>
+<typeInfo handle="=Spring06_AOP/src&lt;com.test07{MessageBean.java[MessageBean" modifiers="513" timestamp="1584618562054"/>
+<typeInfo handle="=Spring06_AOP/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-aop\/5.2.4.RELEASE\/spring-aop-5.2.4.RELEASE.jar&lt;org.aopalliance.intercept(MethodInterceptor.class[MethodInterceptor" modifiers="1537" timestamp="1584345773457"/>
+<typeInfo handle="=Spring06_TestAop01_Test/src&lt;com.test01{Human.java[Human" modifiers="513" timestamp="1513914728000"/>
+<typeInfo handle="=SpringMVC03/src\/main\/java&lt;com.mvc.upgrade.model.dao{BoardDao.java[BoardDao" modifiers="513" timestamp="1584947927694"/>
+<typeInfo handle="=SpringMVC03/src\/main\/java&lt;com.mvc.upgrade.model.biz{BoardBiz.java[BoardBiz" modifiers="513" timestamp="1584959745762"/>
+<typeInfo handle="=SpringMVC03_filter/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.logging(Filter.class[Filter" modifiers="1537" timestamp="1576296281401"/>
+<typeInfo handle="=SpringMVC03_filter/C:\/Users\/Sophie\/.m2\/repository\/javax\/servlet\/servlet-api\/2.5\/servlet-api-2.5.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1584693599294"/>
+<typeInfo handle="=SpringMVC03_filter_aop_login/src\/main\/java&lt;com.mvc.upgrade.model.dao{MemberDao.java[MemberDao" modifiers="513" timestamp="1585120587419"/>
+<typeInfo handle="=SpringMVC03_filter_aop_login/C:\/Users\/Sophie\/.m2\/repository\/org\/mybatis\/mybatis\/3.5.4\/mybatis-3.5.4.jar&lt;org.apache.ibatis.ognl(MemberAccess.class[MemberAccess" modifiers="1537" timestamp="1584946173878"/>
+<typeInfo handle="=SpringMVC03_filter_aop_login/src\/main\/java&lt;com.mvc.upgrade.model.biz{MemberBiz.java[MemberBiz" modifiers="513" timestamp="1585120633726"/>
+<typeInfo handle="=SpringMVC03_filter_aop_login/C:\/Users\/Sophie\/.m2\/repository\/org\/aspectj\/aspectjweaver\/1.6.10\/aspectjweaver-1.6.10.jar&lt;org.aspectj.weaver(Member.class[Member" modifiers="1537" timestamp="1585034520485"/>
+<typeInfo handle="=SpringMVC03_filter_aop_login_interceptor/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-webmvc\/3.1.1.RELEASE\/spring-webmvc-3.1.1.RELEASE.jar&lt;org.springframework.web.servlet(HandlerInterceptor.class[HandlerInterceptor" modifiers="1537" timestamp="1584693584536"/>
+<typeInfo handle="=SpringMVC03_filter_aop_login_interceptor/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-webmvc\/3.1.1.RELEASE\/spring-webmvc-3.1.1.RELEASE.jar&lt;org.springframework.web.servlet(HandlerAdapter.class[HandlerAdapter" modifiers="1537" timestamp="1584693584536"/>
+<typeInfo handle="=springMVC05_update_jdbc/src\/main\/java&lt;com.mvc.update.model.biz{JdbcBiz.java[JdbcBiz" modifiers="513" timestamp="1585639206052"/>
+<typeInfo handle="=springMVC05_update_jdbc/src\/main\/java&lt;com.mvc.update.model.dao{JdbcDao.java[JdbcDao" modifiers="513" timestamp="1585639157273"/>
+<typeInfo handle="=springMVC05_update_jdbc/C:\/Users\/Sophie\/.m2\/repository\/oracle\/ojdbc6\/11.2.0.3\/ojdbc6-11.2.0.3.jar&lt;oracle.sql.converter(JdbcCharacterConverters.class[JdbcCharacterConverters" modifiers="1537" timestamp="1584946223418"/>
+<typeInfo handle="=springMVC05_update_jdbc_javaconfig/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-webmvc\/5.2.5.RELEASE\/spring-webmvc-5.2.5.RELEASE.jar&lt;org.springframework.web.servlet.config.annotation(WebMvcConfigurer.class[WebMvcConfigurer" modifiers="1537" timestamp="1585571621364"/>
+<typeInfo handle="=springMVC05_update_jdbc_javaconfig/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-web\/5.2.5.RELEASE\/spring-web-5.2.5.RELEASE.jar&lt;org.springframework.web(WebApplicationInitializer.class[WebApplicationInitializer" modifiers="1537" timestamp="1585571625693"/>
+</typeInfoHistroy>

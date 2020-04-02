@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<aop:aspectj-autoproxy />
+	<bean id="man" class="com.test03.Man" />
+	<bean id="woman" class="com.test03.Woman" />
+	<bean id="myAspect" class="com.test03.MyAspect" />
+	
+	<aop:config>
+		<aop:aspect ref="myAspect">
+			<aop:before method="before" pointcut="execution(public * com.test03.Man.*(..))"/>	<!-- man이 가진 모든 메소드들을 호출할 때만 before가 실행된다. -->
+			<aop:after method="after" pointcut="execution(public * *(..))"/>
+		</aop:aspect>
+	</aop:config>
+
+
+
+</beans>

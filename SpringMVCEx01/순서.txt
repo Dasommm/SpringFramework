@@ -1,0 +1,32 @@
+SpringMVC03
+*****************초기 설정하기*******************
+1. pom.xml : Dependency추가. (Ojdbc6(+repository), mybatis, mybatis-spring, commons-dbcp, spring-orm)
+2. web.xml : applicationContext.xml경로 변경, mapping(*.do)로 변경, encoding filter적용
+3. /WEB-INF/spring/sqls/myboard.sql 만들기
+4. dto, dao, biz, controller 만들기
+5. src/main/resources/mybatis/board-mapper.xml 만들기
+6. src/main/resources/mybatis/db.properties 파일 만들기
+7. /WEB-INF/spring/sqls/config.xml 만들기. config 파일은 하나만 만들고 mapper를 여러개 만들어서 사용할거다.(board-mapper, member-mapper 등등)
+8. applicationContext.xml, servlet-context.xml을 사용한다. 
+8-1. applicationContext.xml에 db.properties에 작성한 내용을 가져온다.(db와 연결하기 위해서)
+8-2. applicationContext.xml에 db.properties의 내용으로 dataSource 객체를 만든다.
+8-3. applicationContext.xml에 만들어진 dataSource 객체를 이용하여 mybatis 연결을 한다.(sqlSession)
+8-4. applicationContext.xml에 sqlSessionTemplate 객체를 생성하여 클래스에서 사용하기 편하게 한다.
+***************작업 시작*********************
+9. web-app에 index.html을 만든다.
+
+
+_filter
+9. com/mvc/upgrade/common(패키지)/filter/LogFilter(impl javax.servlet.Filter) 만든다.
+10. web.xml에서 만든 filter를 적용시킨다. 
+
+_aop
+11. aop를 사용하려면 pom.xml에 aspectjweaver, aspectjrt를 붙여넣어야한다. 
+12. com/mvc/upgrade/common/aop/LogAop
+13. WEB-INF/spring/appServlet/aop-context.xml
+14. web.xml에 aop-context.xml추가 (init-param에)
+15. src/main/resources/log4j.xml(logge 추가 및 log level 변경  - trace)
+
+_login
+16. pom.xml에 jackson-core-asl, jackson-mapper-asl(spring 4.x 이후부터는 변경됨)
+4.x 버전 이후는 com.fasterxml.jackson.core » jackson-core, com.fasterxml.jackson.core » jackson-databind 사용하면 됨 

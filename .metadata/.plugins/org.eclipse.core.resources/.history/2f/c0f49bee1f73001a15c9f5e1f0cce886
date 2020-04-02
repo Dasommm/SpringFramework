@@ -1,0 +1,5 @@
+package com.mvc.update.model.dao;
+
+public interface JdbcDao {
+
+}

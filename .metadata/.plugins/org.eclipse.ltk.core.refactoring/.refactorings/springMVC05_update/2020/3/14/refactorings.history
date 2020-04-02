@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;순서.txt&apos; to &apos;springMVC05_update_jdbc/src/main/java/com.mvc.update.model.controller&apos;&#x0D;&#x0A;- Original project: &apos;springMVC05_update&apos;&#x0D;&#x0A;- Destination element: &apos;springMVC05_update_jdbc/src/main/java/com.mvc.update.model.controller&apos;&#x0D;&#x0A;- Original element: &apos;순서.txt&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=springMVC05_update_jdbc/src\/main\/java&lt;com.mvc.update.model.controller" element1="순서.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1585639069531" units="0" version="1.0"/>
+</session>

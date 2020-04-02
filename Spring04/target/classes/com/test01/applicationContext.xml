@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 1.public BeanTest(Date date) 호출 : 2020.12.25일 -->
+	<bean id="myClass" class="com.test01.MyClass" lazy-init="true"/>
+
+	<bean id="date" class="java.util.Date">
+		<constructor-arg value="120" /> <!-- 1900부터 시작해서 2020이니까 -->
+		<!-- 1900부터 시작하는 이유는 java.util.Date에서 찾아보면 된다. (그냥 정해진것) 1900이전을 사용하고 싶으면 빼면 된다. -->
+		<constructor-arg value="11" /> <!-- 월은 0부터 시작 -->
+		<constructor-arg value="25" />
+	</bean>
+
+	<bean id="beanTest" class="com.test01.BeanTest">
+	
+		<constructor-arg ref="date" />
+		
+		<!-- 2. setMyclass 호출 -->
+		<property name="myclass" ref="myClass" />
+		
+		<!-- 3. setDate 호출 : 오늘날짜로 -->
+		 <property name="date"><bean class="java.util.Date"></bean></property>
+	
+		<!-- 4.setNumber(int i)호출 -->
+		<property name="number">
+			<value type="short">100</value>
+		</property>
+		
+		<!-- 5.setArray(String[] arr) 호출 -->
+		<property name="array">
+			<array>
+				<value>홍길동</value>
+				<value>이순신</value>
+				<value>김선달</value>
+			</array>
+		</property>
+		
+		<!-- 6.setList(List<String> list) 호출 -->
+		<property name="list">
+			<list>
+				<value>봄</value>
+				<value>여름</value> 
+				<value>가을</value>
+				<value>겨울</value>
+			</list>
+		</property>
+		
+		<!-- 7.setMyset(Set<String> set) 호출 : 1, 1, 2, 3, 3 -->
+		<property name="myset">	<!-- set은 중복 허용 안됨 -->
+			<set>
+				<value>1</value>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>3</value>
+			</set>
+		</property>
+		
+		<!-- 8.setMap(Map<String, String> map) 호출 : {1:봄},{2:여름},{3:가을},{4:겨울} -->
+		<property name="map">
+			<map>
+				<entry key="1" value="봄"></entry>
+				<entry key="2" value="여름"></entry>
+				<entry key="3" value="가을"></entry>
+				<entry>
+					<key><value>4</value></key>
+					<value>겨울</value>
+				</entry>
+			</map>
+		</property>
+		
+		<!-- 9.setScore(List<Score> score) 호출 -->
+		<property name="score">
+			<list>
+				<bean class="com.test01.Score">
+					<property name="name" value="홍길동" />
+					<property name="eng" value="30" />
+					<property name="kor" value="50" />
+					<property name="math" value="70" />
+				</bean>
+				<ref bean="lee" />	<!-- 외부에서 참조할 bean을 만들어야한다. -->
+			</list>
+		</property>
+		
+	</bean>
+	
+	<bean id="lee" class="com.test01.Score">
+		<constructor-arg value="이순신" />
+		<constructor-arg value="60" />
+		<constructor-arg value="40" />
+		<constructor-arg value="50" />
+	</bean>
+	
+	
+</beans>

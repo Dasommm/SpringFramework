@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="banana" class="com.test01.MessageBeanImpl"></bean>
+	
+	<bean id="mango" class="com.test01.MessageBeanImpl">
+		<constructor-arg>
+			<value>mango</value>
+		</constructor-arg>
+		<constructor-arg value="7000"></constructor-arg>
+	</bean>
+	
+	<bean id="grape" class="com.test01.MessageBeanImpl">
+		<constructor-arg index="1" value="10000"></constructor-arg>
+		<constructor-arg index="0" value="grape"></constructor-arg>
+		
+	</bean>
+</beans>

@@ -1,0 +1,7 @@
+1585553697805	Rename package 'com.mvc.updown.common'
+1585554623713	Rename resource 'root-context.xml'
+1585554627330	Move 'applicationContext.xml' to 'appServlet'
+1585555057055	Move 'index.html' to 'webapp'
+1585558520337	Delete element
+1585559032559	Move 'index.jsp' to 'views'
+1585559153274	Move 'index.jsp' to 'webapp'

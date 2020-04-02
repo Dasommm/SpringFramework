@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>	<!-- typeAlias와 mapper만 할거다. environment는 applicationContext.xml에서 해줄거다 -->
+
+	<typeAliases>
+		<typeAlias type="com.mvc.upgrade.model.dto.BoardDto" alias="boardDto"/>
+		<typeAlias type="com.mvc.upgrade.model.dto.MemberDto" alias="memberDto"/>
+	</typeAliases>
+	
+	  <mappers>
+	    <mapper resource="/mybatis/board-mapper.xml"/>
+		<mapper resource="/mybatis/member-mapper.xml"/>
+	  </mappers>
+	  <!-- mapper에 resource=하고 경로를 잡아주는데 
+	  resource : src/main/resources를 뜻한다.-->
+
+</configuration>

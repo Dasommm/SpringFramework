@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringMVC3_filter&apos; to &apos;SpringMVC03_filter&apos;" description="Rename resource &apos;SpringMVC3_filter&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SpringMVC3_filter" name="SpringMVC03_filter" stamp="1585031747993" updateReferences="true"/>
+</session>
