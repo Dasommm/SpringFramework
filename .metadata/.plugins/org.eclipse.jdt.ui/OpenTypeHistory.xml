@@ -33,4 +33,6 @@
 <typeInfo handle="=springMVC05_update_jdbc/C:\/Users\/Sophie\/.m2\/repository\/oracle\/ojdbc6\/11.2.0.3\/ojdbc6-11.2.0.3.jar&lt;oracle.sql.converter(JdbcCharacterConverters.class[JdbcCharacterConverters" modifiers="1537" timestamp="1584946223418"/>
 <typeInfo handle="=springMVC05_update_jdbc_javaconfig/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-webmvc\/5.2.5.RELEASE\/spring-webmvc-5.2.5.RELEASE.jar&lt;org.springframework.web.servlet.config.annotation(WebMvcConfigurer.class[WebMvcConfigurer" modifiers="1537" timestamp="1585571621364"/>
 <typeInfo handle="=springMVC05_update_jdbc_javaconfig/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-web\/5.2.5.RELEASE\/spring-web-5.2.5.RELEASE.jar&lt;org.springframework.web(WebApplicationInitializer.class[WebApplicationInitializer" modifiers="1537" timestamp="1585571625693"/>
+<typeInfo handle="=SpringEMP/src\/main\/java&lt;com.mvc.emp.dao{EmpDao.java[EmpDao" modifiers="513" timestamp="1586263335447"/>
+<typeInfo handle="=SpringEMP/src\/main\/java&lt;com.mvc.emp.biz{EmpBiz.java[EmpBiz" modifiers="513" timestamp="1586263379191"/>
 </typeInfoHistroy>

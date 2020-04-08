@@ -1,5 +1,0 @@
-package com.mvc.update.model.dto;
-
-public class JdbcDto {
-
-}
