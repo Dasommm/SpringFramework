@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p th:text="${#calendars.format(#calendars.createNow(),'yyyy-MM-dd HH:mm')}">#date objects</p>
+	<p>#number objects</p>
+	<p>#strings objects</p>
+
+</body>
+</html>
