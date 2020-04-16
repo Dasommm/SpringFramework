@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>StartBoot03</artifactId>
+	<artifactId>StartBoot04</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>StartBoot03</name>
+	<name>StartBoot04</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -21,6 +21,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<dependency>
@@ -28,6 +32,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -40,7 +50,6 @@
 			</exclusions>
 		</dependency>
 		
-		<!-- 추가 -->
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
 		<!-- 버전 지워준다 -->
 		<dependency>
@@ -48,16 +57,20 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+		<!-- https://mvnrepository.com/artifact/oracle/ojdbc6 -->
 		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-devtools</artifactId>
+		    <groupId>oracle</groupId>
+		    <artifactId>ojdbc6</artifactId>
+		    <version>11.2.0.3</version>
 		</dependency>
-		
-
 	</dependencies>
-
-
+	
+		<repositories>
+		<repository>
+	        <id>Datanucleus</id>
+	        <url>http://www.datanucleus.org/downloads/maven2/</url>
+     </repository>
+	</repositories>
 
 	<build>
 		<plugins>
