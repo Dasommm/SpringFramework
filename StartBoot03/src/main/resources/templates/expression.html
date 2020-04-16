@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>EXPRESSION</h1>
+
+	<p th:text="|Hello, ${name}|">Hello, $name</p>
+	<p th:text="${dto.subject}">dto.subject</p>
+
+	<div th:object="${dto}">
+		<p th:text="*{subject}">subject</p>
+	</div>
+
+	<table border="1">
+		<tr>
+			<th>SUBJECTS</th>
+			<th>SEQ</th>
+		</tr>
+		<tr th:each="dto:${list}">
+			<td th:text="*{dto.subject}">subject</td>
+			<td th:text="*{dto.seq}">seq</td>
+		</tr>
+	</table>
+	
+	<table border="1">
+		<tr th:if="${list} eq null">
+			<td>list가 null입니다.</td>
+		</tr>
+		<tr th:unless="${list} eq null">
+			<td>list가 null이 아닙니다.</td>
+		</tr>
+	</table>
+	
+	<div th:each="num:${#numbers.sequence(1,3)}">
+		<th:block th:switch="${num}">
+			<p th:case="1" th:text="|This is ${num}!|">1</p>
+			<p th:case="2" th:text="|This is ${num}!!|">2</p>
+			<p th:case="3" th:text="|This is ${num}!!!|">3</p>
+		</th:block>
+	</div>
+	
+	<a th:href="@{index.html}">index</a>
+	<a th:href="@{util}">utility</a>
+
+
+	
+
+
+</body>
+</html>
