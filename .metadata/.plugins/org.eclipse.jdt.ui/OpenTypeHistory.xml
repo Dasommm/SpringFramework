@@ -35,4 +35,6 @@
 <typeInfo handle="=springMVC05_update_jdbc_javaconfig/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/spring-web\/5.2.5.RELEASE\/spring-web-5.2.5.RELEASE.jar&lt;org.springframework.web(WebApplicationInitializer.class[WebApplicationInitializer" modifiers="1537" timestamp="1585571625693"/>
 <typeInfo handle="=SpringEMP/src\/main\/java&lt;com.mvc.emp.dao{EmpDao.java[EmpDao" modifiers="513" timestamp="1586271874769"/>
 <typeInfo handle="=SpringEMP/src\/main\/java&lt;com.mvc.emp.biz{EmpBiz.java[EmpBiz" modifiers="513" timestamp="1586263379191"/>
+<typeInfo handle="=StartBoot02/src\/main\/java&lt;com.boot.jdbc.model.biz{MyBiz.java[MyBiz" modifiers="513" timestamp="1587024367152"/>
+<typeInfo handle="=StartBoot04/C:\/Users\/Sophie\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.2.6.RELEASE\/spring-data-jpa-2.2.6.RELEASE.jar&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1587036272751"/>
 </typeInfoHistroy>
