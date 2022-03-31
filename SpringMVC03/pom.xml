@@ -9,7 +9,7 @@
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>3.1.1.RELEASE</org.springframework-version> <!-- 같은 artifact의 version을 맞추기 위해서  -->
+		<org.springframework-version>5.3.18</org.springframework-version> <!-- 같은 artifact의 version을 맞추기 위해서  -->
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
